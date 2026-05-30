@@ -39,6 +39,10 @@ def _parse_quakeml(xml_text: str) -> list[dict]:
     return events
 
 
+def main():
+    mcp.run()
+
+
 @mcp.tool()
 def query_earthquakes(
     starttime: str,
