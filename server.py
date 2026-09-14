@@ -2,9 +2,9 @@ import json
 import xml.etree.ElementTree as ET
 
 import httpx
-from mcp.server.fastmcp import FastMCP
+from mcp.server.mcpserver import MCPServer
 
-mcp = FastMCP("Alaska Earthquake MCP")
+mcp = MCPServer("Alaska Earthquake MCP")
 
 FDSN_BASE = "http://dispatchon.aec.alaska.edu/fdsnws/event/1/query"
 
